@@ -1,4 +1,4 @@
-from src.model.config.base import Base
+from src.model.configs.base import Base
 from sqlalchemy import Column, Integer, ForeignKey, String
 
 class EventosLink(Base):
