@@ -1,4 +1,4 @@
-from src.model.repositories.interfaces.susbscribers_repository import SubscribersRepositoryInterface
+from src.model.repositories.interfaces.subscribers_repository import SubscribersRepositoryInterface
 from src.http_types.http_request import HttpRequest
 from src.http_types.http_response import HttpResponse
 

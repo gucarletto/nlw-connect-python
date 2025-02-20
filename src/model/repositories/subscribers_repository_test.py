@@ -20,3 +20,12 @@ def test_select_subscriber():
   subscriber = subscribers_repository.select_subscriber(subscriber_email, subscriber_event_id)
   assert subscriber.email == subscriber_email
   assert subscriber.evento_id == subscriber_event_id
+
+@pytest.mark.skip(reason='Ranking in db')
+def test_ranking():
+  event_id = 1
+  subscribers_repository = SubscribersRepository()
+  ranking = subscribers_repository.get_ranking(event_id)
+  assert ranking[0].link == 'http://test.com'
+  assert ranking[0].total == 1
+  assert len(ranking) == 1

@@ -2,7 +2,7 @@ from src.model.configs.base import Base
 from sqlalchemy import Column, Integer, ForeignKey, String
 
 class EventosLink(Base):
-  __tablename__ = 'EventosLink'
+  __tablename__ = 'Eventos_Link'
   id = Column(Integer, primary_key=True, autoincrement=True)
   evento_id = Column(Integer, ForeignKey('Eventos.id'), nullable=False)
   inscrito_id = Column(Integer, ForeignKey('Inscritos.id'), nullable=False)
